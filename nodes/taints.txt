@@ -1,0 +1,6 @@
+kubectl taint nodes nodo-reggaeton music=perreo-intenso:NoSchedule
+kubectl taint nodes nodo-rock music=guitarra-electrica:NoSchedule
+kubectl taint nodes nodo-techno music=bass-boost:NoSchedule
+kubectl taint nodes nodo-salsa music=sabor-latino:NoSchedule
+kubectl taint nodes nodo-pop music=hits-globales:NoSchedule
+kubectl taint nodes nodo-rap music=rimas-urbanas:NoSchedule

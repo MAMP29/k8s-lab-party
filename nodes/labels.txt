@@ -1,0 +1,6 @@
+kubectl label nodes nodo-reggaeton style=urbano
+kubectl label nodes nodo-rock style=metalero
+kubectl label nodes nodo-techno style=electronico
+kubectl label nodes nodo-salsa style=latino
+kubectl label nodes nodo-pop style=diverso
+kubectl label nodes nodo-rap style=callejero
