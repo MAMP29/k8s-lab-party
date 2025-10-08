@@ -16,4 +16,4 @@ spec:
               - key: style
                 operator: In
                 values:
-                  - urbano
+                  - urban
