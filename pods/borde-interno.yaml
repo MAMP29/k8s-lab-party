@@ -1,4 +1,3 @@
-# Pod by Ricardo Erazo
 apiVersion: v1
 kind: Pod
 metadata:
@@ -8,6 +7,13 @@ spec:
   containers:
     - name: wisin-yandel
       image: nginx
+
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "perreo-intenso"
+      effect: "NoSchedule"
+
   affinity:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
@@ -17,3 +23,7 @@ spec:
                 operator: In
                 values:
                   - urban
+                  
+  annotations:
+    estudiante: "Ricardo Erazo"
+    musica-preferida: "Reggaeton"
