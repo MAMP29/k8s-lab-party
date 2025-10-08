@@ -1,3 +1,4 @@
+# Pod by Ricardo Erazo
 apiVersion: v1
 kind: Pod
 metadata:
@@ -5,7 +6,7 @@ metadata:
   namespace: reggaeton
 spec:
   containers:
-    - name: bad-bunny
+    - name: wisin-yandel
       image: nginx
   affinity:
     nodeAffinity:
