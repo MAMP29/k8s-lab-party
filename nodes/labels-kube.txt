@@ -1,0 +1,6 @@
+kubectl label nodes music-cluster style=urbano
+kubectl label nodes music-cluster-m02 style=metalero
+kubectl label nodes music-cluster-m03 style=electronico
+kubectl label nodes music-cluster-m04 style=latino
+kubectl label nodes music-cluster-m05 style=diverso
+kubectl label nodes music-cluster-m06 style=callejero

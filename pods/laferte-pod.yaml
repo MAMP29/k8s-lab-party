@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: versatilidad-extrema
+  namespace: pop
+  annotations:
+    estudiante: "Miguel Muñoz"
+    musica-preferida: "pop latino"
+spec:
+  containers:
+    - name: latin-folk-pop-lover
+      image: nginx
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "hits-globales"
+      effect: "NoSchedule"
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - diverso

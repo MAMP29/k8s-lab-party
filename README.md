@@ -29,3 +29,5 @@ Pods, pods y pods!
 
 
 Crear el pod con las anotaciones correctas.
+
+Los nombres de los nodos son de referencia, pueden ser diferentes en base al software empleado para emular el sistema.

@@ -1,0 +1,6 @@
+kubectl taint nodes music-cluster music=perreo-intenso:NoSchedule
+kubectl taint nodes music-cluster-m02 music=guitarra-electrica:NoSchedule
+kubectl taint nodes music-cluster-m03 music=bass-boost:NoSchedule
+kubectl taint nodes music-cluster-m04 music=sabor-latino:NoSchedule
+kubectl taint nodes music-cluster-m05 music=hits-globales:NoSchedule
+kubectl taint nodes music-cluster-m06 music=rimas-urbanas:NoSchedule
