@@ -1,17 +1,17 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: borde-interno
-  namespace: reggaeton
+  name: grupo-niche
+  namespace: salsa
 spec:
   containers:
-    - name: wisin-yandel
+    - name: jairo-varela
       image: nginx
 
   tolerations:
     - key: "music"
       operator: "Equal"
-      value: "perreo-intenso"
+      value: "sabor-latino"
       effect: "NoSchedule"
 
   affinity:
@@ -22,8 +22,8 @@ spec:
               - key: style
                 operator: In
                 values:
-                  - urbano
-
+                  - latino
+                  
   annotations:
     estudiante: "Ricardo Erazo"
-    musica-preferida: "Reggaeton"
+    musica-preferida: "Salsa"
