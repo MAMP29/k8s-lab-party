@@ -4,3 +4,4 @@ kubectl taint nodes nodo-techno music=bass-boost:NoSchedule
 kubectl taint nodes nodo-salsa music=sabor-latino:NoSchedule
 kubectl taint nodes nodo-pop music=hits-globales:NoSchedule
 kubectl taint nodes nodo-rap music=rimas-urbanas:NoSchedule
+kubectl taint nodes nodo-bachata music=romantico:NoSchedule
