@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: champetuo
+  namespace: pop
+  annotations:
+    estudiante: "Juan Sebastian Oviedo O."
+    musica-preferida: "Rock"
+spec:
+  containers:
+    - name: Bazurto All Stars
+      image: nginx
+
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "hits-globales"
+      effect: "NoSchedule"
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - diverso
