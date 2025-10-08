@@ -5,7 +5,7 @@ metadata:
   namespace: pop
   annotations:
     estudiante: "Miguel Muñoz"
-    musica-preferida: "pop"
+    musica-preferida: "pop latino"
 spec:
   containers:
     - name: latin-folk-pop-lover
