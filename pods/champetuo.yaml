@@ -8,7 +8,7 @@ metadata:
     musica-preferida: "Rock"
 spec:
   containers:
-    - name: Bazurto All Stars
+    - name: bazurto-all-stars
       image: nginx
 
   tolerations:
