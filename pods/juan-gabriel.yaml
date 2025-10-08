@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: hasta-que-te-conoci
+  namespace: pop
+  annotations:
+    estudiante: "Zammir Andrade"
+    musica-preferida: "Variadito"
+spec:
+  containers:
+    - name: juan-gabriel
+      image: nginx
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "hits-globales"
+      effect: "NoSchedule"
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - diverso
