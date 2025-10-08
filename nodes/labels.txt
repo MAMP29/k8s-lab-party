@@ -4,4 +4,4 @@ kubectl label nodes nodo-techno style=electronico
 kubectl label nodes nodo-salsa style=latino
 kubectl label nodes nodo-pop style=diverso
 kubectl label nodes nodo-rap style=callejero
-kubectl label nodes nodo-rap style=baladas
+kubectl label nodes nodo-bachata style=baladas
