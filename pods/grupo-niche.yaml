@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: grupo-niche
+  namespace: salsa
+  annotations:
+    estudiante: "Ricardo Erazo"
+    musica-preferida: "Salsa"
+spec:
+  containers:
+    - name: jairo-varela
+      image: nginx
+
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "sabor-latino"
+      effect: "NoSchedule"
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - latino
