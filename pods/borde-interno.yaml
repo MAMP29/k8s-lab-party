@@ -3,6 +3,9 @@ kind: Pod
 metadata:
   name: borde-interno
   namespace: reggaeton
+  annotations:
+    estudiante: "Ricardo Erazo"
+    musica-preferida: "Reggaeton"
 spec:
   containers:
     - name: wisin-yandel
@@ -23,7 +26,3 @@ spec:
                 operator: In
                 values:
                   - urbano
-
-  annotations:
-    estudiante: "Ricardo Erazo"
-    musica-preferida: "Reggaeton"

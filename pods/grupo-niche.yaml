@@ -3,6 +3,9 @@ kind: Pod
 metadata:
   name: grupo-niche
   namespace: salsa
+  annotations:
+    estudiante: "Ricardo Erazo"
+    musica-preferida: "Salsa"
 spec:
   containers:
     - name: jairo-varela
@@ -23,7 +26,3 @@ spec:
                 operator: In
                 values:
                   - latino
-                  
-  annotations:
-    estudiante: "Ricardo Erazo"
-    musica-preferida: "Salsa"
