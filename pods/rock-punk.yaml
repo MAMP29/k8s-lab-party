@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rock-punk
+  namespace: rock
+  annotations:
+    estudiante: "Jose Fuertes"
+    musica-preferida: "rock"
+spec:
+  containers:
+    - name: turnstile
+      image: nginx
+
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "guitarra-electrica"
+      effect: "NoSchedule"
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - metalero
