@@ -3,8 +3,8 @@
 Pods, pods y pods!
 
 ## Información del Cluster
-- **Nodos disponibles:** nodo-reggaeton, nodo-rock, nodo-techno, nodo-salsa, nodo-pop, nodo-salsa
-- **Namespaces:** reggaeton, rock, techno, salsa, pop, rap
+- **Nodos disponibles:** nodo-reggaeton, nodo-rock, nodo-techno, nodo-salsa, nodo-pop, nodo-bachata
+- **Namespaces:** reggaeton, rock, techno, salsa, pop, bachata
 
 ## Taints por Nodo
 | Nodo | Taint Key | Taint Value | Effect |
@@ -14,7 +14,7 @@ Pods, pods y pods!
 | nodo-techno | music | bass-boost | NoSchedule |
 | nodo-salsa | music | sabor-latino | NoSchedule |
 | nodo-pop | music | hits-globales | NoSchedule |
-| nodo-rap | music | rimas-urbanas | NoSchedule |
+| nodo-bachata | music | romantico | NoSchedule |
 
 
 ## Labels por Nodo
@@ -25,7 +25,7 @@ Pods, pods y pods!
 | nodo-techno | style | electronico |
 | nodo-salsa | style | latino |
 | nodo-pop | style | diverso |
-| nodo-rap | style | callejero |
+| nodo-bachata | style | baladas |
 
 
 Crear el pod con las anotaciones correctas.

@@ -163,8 +163,8 @@ for i in "${!NODES[@]}"; do
       kubectl taint nodes "$NODE" music=hits-globales:NoSchedule --overwrite || true
       ;;
     5)
-      kubectl label node "$NODE" style=callejero --overwrite
-      kubectl taint nodes "$NODE" music=rimas-urbanas:NoSchedule --overwrite || true
+      kubectl label node "$NODE" style=baladas --overwrite
+      kubectl taint nodes "$NODE" music=romantico:NoSchedule --overwrite || true
       ;;
     *)
       echo "  ⚙️  Nodo adicional detectado ($NODE) — sin etiquetas personalizadas."
