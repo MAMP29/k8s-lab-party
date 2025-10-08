@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: progressive-house
+  namespace: techno
+  annotations:
+    estudiante: "Anderson Pantoja C."
+    musica-preferida: "Techno"
+spec:
+  containers:
+    - name: youna
+      image: nginx
+
+  tolerations:
+    - key: "music"
+      operator: "Equal"
+      value: "bass-boost"
+      effect: "NoSchedule"
+
+  affinity:
+    nodeAffinity:
+      requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+          - matchExpressions:
+              - key: style
+                operator: In
+                values:
+                  - electronico
